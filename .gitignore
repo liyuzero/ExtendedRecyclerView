@@ -30,7 +30,6 @@ proguard/
 *.iml
 jdme_android.iml
 app.iml
-gradle/*
 welfareplugin/*
 ;buildsrc/
 welfareplugin/
