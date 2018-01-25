@@ -48,7 +48,7 @@ allprojects {
 2. 使用module依赖，新增依赖：
 
 ```java
-
+    compile 'com.github.liyuzero:extendedRecyclerView:-SNAPSHOT'
 ```
 
 ### 具体调用（详情见demo）
