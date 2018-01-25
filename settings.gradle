@@ -1,1 +1,1 @@
-include ':bundles-extended-recyclerview', ':demo'
+include ':extendedRecyclerView', ':demo'

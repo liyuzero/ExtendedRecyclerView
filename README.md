@@ -40,8 +40,7 @@ allprojects {
     repositories {
         google()
         jcenter()
-        maven { url "http://artifactory.jd.com/libs-snapshots-local" }
-        maven { url "http://artifactory.jd.com/libs-releases-local" }
+        maven { url 'https://jitpack.io' }
     }
 }
 ```
@@ -49,7 +48,7 @@ allprojects {
 2. 使用module依赖，新增依赖：
 
 ```java
-compile 'com.jd.oa:mae-bundles-extended-recyclerView:1.0.0-SNAPSHOT'
+
 ```
 
 ### 具体调用（详情见demo）
