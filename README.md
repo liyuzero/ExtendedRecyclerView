@@ -1,6 +1,6 @@
 支持增删（递归删，普通删除）的折叠RecyclerView
 
-![device-2018-01-24-175522.mp4_20180124_181035.gif](http://upload-images.jianshu.io/upload_images/5689883-6074ae09bb916f9a.gif?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![ss.gif](http://upload-images.jianshu.io/upload_images/5689883-7e65cd685ddd52b4.gif?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 基于viewType实现，因此大量数据下不会有内存问题
 
