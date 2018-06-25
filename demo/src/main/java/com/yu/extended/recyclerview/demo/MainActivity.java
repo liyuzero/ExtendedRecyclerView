@@ -5,9 +5,9 @@ import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
+import android.view.View;
 import android.view.ViewGroup;
 
-import com.yu.extended.recyclerview.demo.R;
 import com.yu.bundles.extended.recyclerview.ExtendedHolder;
 import com.yu.bundles.extended.recyclerview.ExtendedHolderFactory;
 import com.yu.bundles.extended.recyclerview.ExtendedNode;
@@ -57,15 +57,15 @@ public class MainActivity extends AppCompatActivity {
                 .setEnableExtended(true)
                 .complete();
 
-        new Handler().postDelayed(new Runnable() {
+        findViewById(R.id.add).setOnClickListener(new View.OnClickListener() {
             @Override
-            public void run() {
+            public void onClick(View v) {
                 ArrayList<ExtendedNode> list = new ArrayList<>();
                 list.add(new ExtendedNode(new Type2Bean(111), false, new ExtendedNode(new Type3Bean(1111))));
                 list.add(new ExtendedNode(new Type2Bean(111)));
                 extendedRecyclerViewHelper.insertItems(initList.get(0), 0, list);
             }
-        }, 3000);
+        });
     }
 
     private ArrayList<ExtendedNode> getInitData(){

@@ -1,5 +1,6 @@
 package com.yu.bundles.extended.recyclerview;
 
+import android.content.Context;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
@@ -19,7 +20,7 @@ public class ExtendedRecyclerViewBuilder {
 
     private ExtendedRecyclerViewBuilder(RecyclerView recyclerView) {
         this.recyclerView = recyclerView;
-        this.recyclerView.setLayoutManager(new LinearLayoutManager(recyclerView.getContext()));
+        this.recyclerView.setLayoutManager(new ExtendLayoutManager(recyclerView.getContext()));
         isInit = false;
     }
 
@@ -49,4 +50,18 @@ public class ExtendedRecyclerViewBuilder {
         return adapter;
     }
 
+    private class ExtendLayoutManager extends LinearLayoutManager {
+        ExtendLayoutManager(Context context) {
+            super(context);
+        }
+
+        @Override
+        public void onLayoutChildren(RecyclerView.Recycler recycler, RecyclerView.State state) {
+            try {
+                super.onLayoutChildren(recycler, state);
+            } catch (IndexOutOfBoundsException e){
+                //兼容异常
+            }
+        }
+    }
 }

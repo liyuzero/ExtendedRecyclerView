@@ -12,6 +12,6 @@ ext {
             design      : "com.android.support:design:${SUPPORT_VERSION}",
             annotations : "com.android.support:support-annotations:${SUPPORT_VERSION}",
             appcompat   : "com.android.support:appcompat-v7:${SUPPORT_VERSION}",
-            recyclerview: "com.android.support:recyclerview-v7:${SUPPORT_VERSION}",
+            recyclerview: "com.android.support:recyclerview-v7:${SUPPORT_VERSION}"
     ]
 }
