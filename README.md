@@ -48,7 +48,7 @@ allprojects {
 2. 使用module依赖，新增依赖：
 
 ```java
-    compile 'com.github.liyuzero:extendedRecyclerView:1.0.0'
+    compile 'com.github.liyuzero:extendedRecyclerView:1.1.0'
 ```
 
 ### 具体调用（详情见demo）
