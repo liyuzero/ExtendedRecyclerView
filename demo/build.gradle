@@ -30,6 +30,6 @@ android {
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile compile_support.appcompat
-    compile project(':extendedRecyclerView')
+    compile 'com.github.liyuzero:extendedRecyclerView:1.1.0'
     testCompile 'junit:junit:4.12'
 }
