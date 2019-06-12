@@ -173,6 +173,11 @@ public class ExtendedRecyclerAdapter extends RecyclerView.Adapter<ExtendedHolder
         return dataUtils.getCurAvailableCount();
     }
 
+    @Override
+    public int getNodePos(ExtendedNode node) {
+        return dataUtils.getTransformOriginDataList().indexOf(node);
+    }
+
     void setEnableExtended(boolean enableExtended) {
         isEnableExtended = enableExtended;
     }

@@ -25,6 +25,8 @@ public interface ExtendedRecyclerViewHelper {
 
     int getCurItemCount();
 
+    int getNodePos(ExtendedNode node);
+
     <T>ExtendedNode<T> getNode(int recyclerPos);
 
     ExtendedRecyclerAdapter getExtendedRecyclerAdapter();
