@@ -20,11 +20,7 @@ public abstract class ExtendedHolder<T> extends RecyclerView.ViewHolder{
                 public void onClick(View view) {
                     boolean isExtended = helper.onExtendedItemClick(getLayoutPosition());
                     if(getOnExtendedItemClickListener() != null){
-                        if(isExtended){
-                            getOnExtendedItemClickListener().onExtendedClick();
-                        } else {
-                            getOnExtendedItemClickListener().onFoldClick();
-                        }
+                        getOnExtendedItemClickListener().onExtendedClickViewClick(isExtended);
                     }
                 }
             });
@@ -40,7 +36,6 @@ public abstract class ExtendedHolder<T> extends RecyclerView.ViewHolder{
     }
 
     public interface OnExtendedItemClickListener {
-        void onExtendedClick();
-        void onFoldClick();
+        void onExtendedClickViewClick(boolean isExtended);
     }
 }
